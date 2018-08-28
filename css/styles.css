@@ -1,0 +1,316 @@
+body {
+  font-family:'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* NavBar */
+
+.nav {
+  display: grid;
+  grid-template-columns: 3fr 1fr 6fr 6fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "blank1 logo blank2 navbar blank3";
+  background: rgb(191, 191, 191);
+}
+
+.logo {
+  grid-column: logo;
+}
+
+.bold-logo {
+  font-weight: 600;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column: 4 / 5;
+  grid-gap: 5px;
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 9px;
+  padding-left: 0;
+}
+
+.home {
+  grid-column: 1 / 2;
+}
+
+.aboutus {
+  grid-column: 2 / 3;
+}
+
+.resume {
+  grid-column: 3 / 4;
+}
+
+.portfolio {
+  grid-column: 4 / 5;
+}
+
+.blog {
+  grid-column: 5 / 6;
+}
+
+.contact {
+  grid-column: 6 / 7;
+}
+
+/* Hero */
+
+.jumbotron {
+  background: rgb(191, 191, 191);
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.header-text {
+  grid-column: 2 / 3;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.header-p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.green-text {
+  background: rgb(66, 244, 113);
+  padding: 0 3px 0 3px;
+  color: rgb(220, 220, 220);
+}
+
+button {
+  height: auto;
+  align-content: center;
+  height: 30px;
+  color: rgb(220, 220, 220);
+}
+
+.btn-success {
+  background: rgb(66, 244, 113);
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.header-image {
+  grid-column: 3 / 4;
+  max-width: 400px;
+}
+
+img {
+  width: 100%;
+}
+
+/* About Me */
+
+.aboutme {
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr 1fr;
+  grid-gap: 20px;
+  background-color: rgb(230, 230, 230);
+  padding: 50px 0 50px 0;
+}
+
+.selfie {
+  grid-column: 2 / 3;
+}
+
+.hello-welcome {
+  font-size: 10px;
+  margin-bottom: -12px;
+}
+
+.green-text2 {
+  color: rgb(66, 244, 113);
+}
+
+.p-text {
+  font-size: 12px;
+}
+
+.quad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.graphic {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+.graphic-icon {
+  margin-top: 15px;
+}
+
+.glyphicon-picture {
+  font-size: 2em;
+  padding: 7px;
+  color: rgb(230, 230, 230);
+  background-color: rgb(0, 0, 0);
+  grid-column: 1 / 2;
+}
+
+.graphic-text {
+  grid-column: 2 / 3;
+}
+
+.graphic-h5 {
+  margin-bottom: 0;
+}
+
+/* Zelda */
+
+.zelda {
+  background-image: url("http://images6.fanpop.com/image/photos/33500000/Legend-of-Zelda-Link-Wallpaper-the-legend-of-zelda-33549054-1440-900.jpg");
+  height: 200px;
+}
+
+.green-background {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: rgba(0, 102, 34, 0.8);
+}
+
+.flashy {
+  align-items: : center;
+  justify-items: center;
+  text-align: center;
+}
+
+.number1 {
+  grid-column-start: 2;
+}
+
+.number2 {
+  grid-column-start: 3;
+}
+
+.number3 {
+  grid-column-start: 4;
+}
+
+.number4 {
+  grid-column-start: 5;
+}
+
+.big-number {
+  color: rgb(220, 220, 220);
+  margin-top: 72px;
+  margin-bottom: 0px;
+}
+
+.number-info {
+  background-color: rgba(0, 51, 17, 0.8);
+  display: inline-block;
+  padding: 5px;
+  color: rgb(220, 220, 220);
+  font-size: 12px;
+}
+
+/* Work */
+
+.work {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    background-color: rgb(230, 230, 230);
+    padding: 50px 0 50px 0;
+}
+
+.work-text {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.green-underline {
+  color: rgb(66, 244, 113);
+}
+
+.app-card {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  background: rgb(245, 245, 245);
+}
+
+.card-height {
+  height: 150px;
+  width: 200px;
+  padding: 10px;
+}
+
+.photoshop {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  text-align: center;
+  background: rgb(245, 245, 245);
+}
+
+.psd {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  text-align: center;
+  background: rgb(245, 245, 245);
+}
+
+/* Get In Touch */
+
+.getintouch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0 50px 0;
+}
+
+.intouch-text {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.contact-details {
+  border: 1px solid rgb(230, 230, 230);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.bold-info {
+  font-size: 10px;
+}
+
+.contact-form {
+  border: 1px solid rgb(230, 230, 230);
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Footer */
+
+.footer {
+  height: 150px;
+  background: rgb(5, 5, 5)
+}
+
+.footer-icon {
+  color: rgb(245, 245, 245);
+  text-align: center;
+  padding-top: 35px;
+}
